@@ -59,7 +59,7 @@ class LaunchTableViewCell: UITableViewCell {
     
     func commonInit() {
         
-        backgroundColor = .red
+        backgroundColor = .black
         stackView.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: Constants.padding).activate()
         stackView.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: Constants.padding).activate()
         stackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: Constants.padding).activate()

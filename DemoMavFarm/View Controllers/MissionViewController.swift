@@ -28,15 +28,19 @@ class MissionViewController: UIViewController {
 extension MissionViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return coordinator.missions.count
+        return coordinator.numberOfRowsInSection()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: LaunchTableViewCell.Constants.launchCell, for: indexPath) as? LaunchTableViewCell else { fatalError("Launch Table View Cell cannot be created.")}
-        
-        cell.configure(with: coordinator.missions[indexPath.row])
-        
-        return cell
+
+        return coordinator.configure(cell: cell, indexPath: indexPath)
+    }
+}
+
+extension MissionViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

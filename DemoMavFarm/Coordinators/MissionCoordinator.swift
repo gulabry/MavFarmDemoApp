@@ -23,15 +23,18 @@ class MissionCoordinator {
     
     func setup() {
         
-        missionController.view.backgroundColor = .red
+        missionController.view.backgroundColor = .black
         missionController.missionView.topLabel.text = "Countdown Until Next Launch"
         missionController.missionView.timerLabel.text = "0h 0m 0s"
+        
         missionController.missionView.stackView.backgroundColor = .clear
         missionController.missionView.tableView.backgroundColor = .clear
         
         missionController.missionView.tableView.register(LaunchTableViewCell.self, forCellReuseIdentifier: LaunchTableViewCell.Constants.launchCell)
         missionController.missionView.tableView.rowHeight = 130
         missionController.missionView.tableView.dataSource = missionController
+        missionController.missionView.tableView.delegate = missionController
+
         
         Network.get(mission: .upcoming) { missions in
             DispatchQueue.main.async {
@@ -47,6 +50,15 @@ class MissionCoordinator {
                 self.runTimer()
             }
         }
+    }
+    
+    func numberOfRowsInSection() -> Int {
+        return missions.count
+    }
+    
+    func configure(cell: LaunchTableViewCell, indexPath: IndexPath) -> LaunchTableViewCell {
+        cell.configure(with: missions[indexPath.row])
+        return cell
     }
     
     func runTimer() {
