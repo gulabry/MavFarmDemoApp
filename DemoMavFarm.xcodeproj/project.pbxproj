@@ -14,6 +14,7 @@
 		C236CBCB22DFF96A001265DA /* UIView+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBCA22DFF969001265DA /* UIView+Utilities.swift */; };
 		C236CBCD22DFFD3C001265DA /* NSLayoutConstraint+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBCC22DFFD3C001265DA /* NSLayoutConstraint+Convenience.swift */; };
 		C236CBD022E00A0A001265DA /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBCF22E00A0A001265DA /* LaunchTableViewCell.swift */; };
+		C236CBD222E0151A001265DA /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBD122E0151A001265DA /* Mission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C236CBCA22DFF969001265DA /* UIView+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utilities.swift"; sourceTree = "<group>"; };
 		C236CBCC22DFFD3C001265DA /* NSLayoutConstraint+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Convenience.swift"; sourceTree = "<group>"; };
 		C236CBCF22E00A0A001265DA /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
+		C236CBD122E0151A001265DA /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		C236CBC822DFF638001265DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C236CBD122E0151A001265DA /* Mission.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C236CBD222E0151A001265DA /* Mission.swift in Sources */,
 				C236CBB722DFF590001265DA /* ViewController.swift in Sources */,
 				C236CBD022E00A0A001265DA /* LaunchTableViewCell.swift in Sources */,
 				C236CBB522DFF590001265DA /* AppDelegate.swift in Sources */,
