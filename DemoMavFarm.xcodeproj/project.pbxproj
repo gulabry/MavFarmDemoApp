@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C236CBB522DFF590001265DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBB422DFF590001265DA /* AppDelegate.swift */; };
-		C236CBB722DFF590001265DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBB622DFF590001265DA /* ViewController.swift */; };
+		C236CBB722DFF590001265DA /* MissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBB622DFF590001265DA /* MissionViewController.swift */; };
 		C236CBBC22DFF591001265DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C236CBBB22DFF591001265DA /* Assets.xcassets */; };
 		C236CBCB22DFF96A001265DA /* UIView+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBCA22DFF969001265DA /* UIView+Utilities.swift */; };
 		C236CBCD22DFFD3C001265DA /* NSLayoutConstraint+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBCC22DFFD3C001265DA /* NSLayoutConstraint+Convenience.swift */; };
@@ -21,12 +21,14 @@
 		C236CBDE22E02AA7001265DA /* SecondStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBDD22E02AA7001265DA /* SecondStage.swift */; };
 		C236CBE022E02AC6001265DA /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBDF22E02AC6001265DA /* Payload.swift */; };
 		C236CBE522E0328C001265DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C236CBE422E0328C001265DA /* LaunchScreen.storyboard */; };
+		C236CBE722E03E63001265DA /* MissionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBE622E03E63001265DA /* MissionCoordinator.swift */; };
+		C236CBE922E03F5A001265DA /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBE822E03F5A001265DA /* MissionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C236CBB122DFF590001265DA /* DemoMavFarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoMavFarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C236CBB422DFF590001265DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C236CBB622DFF590001265DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C236CBB622DFF590001265DA /* MissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionViewController.swift; sourceTree = "<group>"; };
 		C236CBBB22DFF591001265DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C236CBC022DFF591001265DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C236CBCA22DFF969001265DA /* UIView+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utilities.swift"; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		C236CBDD22E02AA7001265DA /* SecondStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStage.swift; sourceTree = "<group>"; };
 		C236CBDF22E02AC6001265DA /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		C236CBE422E0328C001265DA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C236CBE622E03E63001265DA /* MissionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionCoordinator.swift; sourceTree = "<group>"; };
+		C236CBE822E03F5A001265DA /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		C236CBC622DFF620001265DA /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				C236CBE622E03E63001265DA /* MissionCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -96,7 +101,7 @@
 		C236CBC722DFF631001265DA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C236CBB622DFF590001265DA /* ViewController.swift */,
+				C236CBB622DFF590001265DA /* MissionViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				C236CBCF22E00A0A001265DA /* LaunchTableViewCell.swift */,
+				C236CBE822E03F5A001265DA /* MissionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,11 +216,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C236CBD222E0151A001265DA /* Mission.swift in Sources */,
-				C236CBB722DFF590001265DA /* ViewController.swift in Sources */,
+				C236CBE722E03E63001265DA /* MissionCoordinator.swift in Sources */,
+				C236CBB722DFF590001265DA /* MissionViewController.swift in Sources */,
 				C236CBD022E00A0A001265DA /* LaunchTableViewCell.swift in Sources */,
 				C236CBB522DFF590001265DA /* AppDelegate.swift in Sources */,
 				C236CBCB22DFF96A001265DA /* UIView+Utilities.swift in Sources */,
 				C236CBDC22E02A8F001265DA /* FirstStage.swift in Sources */,
+				C236CBE922E03F5A001265DA /* MissionView.swift in Sources */,
 				C236CBE022E02AC6001265DA /* Payload.swift in Sources */,
 				C236CBD422E025B4001265DA /* Network.swift in Sources */,
 				C236CBCD22DFFD3C001265DA /* NSLayoutConstraint+Convenience.swift in Sources */,
