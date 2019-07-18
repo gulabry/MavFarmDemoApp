@@ -77,11 +77,11 @@
 			isa = PBXGroup;
 			children = (
 				C236CBB422DFF590001265DA /* AppDelegate.swift */,
-				C236CBE122E03229001265DA /* Network */,
-				C236CBC822DFF638001265DA /* Model */,
 				C236CBCE22E009AB001265DA /* View */,
 				C236CBC722DFF631001265DA /* View Controllers */,
 				C236CBC622DFF620001265DA /* Coordinators */,
+				C236CBE122E03229001265DA /* Network */,
+				C236CBC822DFF638001265DA /* Model */,
 				C236CBC922DFF951001265DA /* Utilities */,
 				C236CBBB22DFF591001265DA /* Assets.xcassets */,
 				C236CBC022DFF591001265DA /* Info.plist */,

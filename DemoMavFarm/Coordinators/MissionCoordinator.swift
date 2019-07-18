@@ -31,7 +31,7 @@ class MissionCoordinator {
         missionController.missionView.tableView.backgroundColor = .clear
         
         missionController.missionView.tableView.register(LaunchTableViewCell.self, forCellReuseIdentifier: LaunchTableViewCell.Constants.launchCell)
-        missionController.missionView.tableView.rowHeight = 130
+        missionController.missionView.tableView.rowHeight = 150
         missionController.missionView.tableView.dataSource = missionController
         missionController.missionView.tableView.delegate = missionController
 

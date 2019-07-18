@@ -57,6 +57,6 @@ class MissionView: UIView {
     }
     
     func commonInit() {
-        
+        tableView.separatorStyle = .none
     }
 }

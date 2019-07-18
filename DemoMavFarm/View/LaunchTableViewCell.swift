@@ -11,7 +11,7 @@ import UIKit
 class LaunchTableViewCell: UITableViewCell {
     
     struct Constants {
-        static let padding: CGFloat = 8
+        static let padding: CGFloat = 12
         static let launchCell = "launchCell"
     }
 
@@ -19,7 +19,7 @@ class LaunchTableViewCell: UITableViewCell {
         $0.axis = .vertical
         $0.spacing = 4
         $0.distribution = .equalSpacing
-        $0.alignment = .leading
+        $0.alignment = .center
     }
     
     lazy var missionNameLabel: UILabel = configureSubview(UILabel()) {
@@ -61,7 +61,7 @@ class LaunchTableViewCell: UITableViewCell {
         
         backgroundColor = .black
         stackView.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: Constants.padding).activate()
-        stackView.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: Constants.padding).activate()
+        stackView.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -Constants.padding).activate()
         stackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: Constants.padding).activate()
         stackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -Constants.padding).activate()
     }
@@ -69,7 +69,7 @@ class LaunchTableViewCell: UITableViewCell {
     func configure(with mission: Mission) {
         missionNameLabel.text = "\(mission.mission_name)"
         missionIDLabel.text = "Mission ID: \(mission.mission_id.first ?? "N/A")"
-        missionTimeLabel.text = "Launch Date:\(mission.launchDateString)"
+        missionTimeLabel.text = "Launch Date: \(mission.launchDateString)"
         reusePiecesLabel.text = "Reused Pieces: \(mission.isReusingPieces)"
         rocketNameLabel.text = "Rocket: \(mission.rocket.rocket_name)"
     }
