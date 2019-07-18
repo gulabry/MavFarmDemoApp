@@ -10,11 +10,17 @@
 		C236CBB522DFF590001265DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBB422DFF590001265DA /* AppDelegate.swift */; };
 		C236CBB722DFF590001265DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBB622DFF590001265DA /* ViewController.swift */; };
 		C236CBBC22DFF591001265DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C236CBBB22DFF591001265DA /* Assets.xcassets */; };
-		C236CBBF22DFF591001265DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C236CBBD22DFF591001265DA /* LaunchScreen.storyboard */; };
 		C236CBCB22DFF96A001265DA /* UIView+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBCA22DFF969001265DA /* UIView+Utilities.swift */; };
 		C236CBCD22DFFD3C001265DA /* NSLayoutConstraint+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBCC22DFFD3C001265DA /* NSLayoutConstraint+Convenience.swift */; };
 		C236CBD022E00A0A001265DA /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBCF22E00A0A001265DA /* LaunchTableViewCell.swift */; };
 		C236CBD222E0151A001265DA /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBD122E0151A001265DA /* Mission.swift */; };
+		C236CBD422E025B4001265DA /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBD322E025B4001265DA /* Network.swift */; };
+		C236CBD622E029F0001265DA /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBD522E029F0001265DA /* Rocket.swift */; };
+		C236CBDA22E02A39001265DA /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBD922E02A39001265DA /* Core.swift */; };
+		C236CBDC22E02A8F001265DA /* FirstStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBDB22E02A8F001265DA /* FirstStage.swift */; };
+		C236CBDE22E02AA7001265DA /* SecondStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBDD22E02AA7001265DA /* SecondStage.swift */; };
+		C236CBE022E02AC6001265DA /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = C236CBDF22E02AC6001265DA /* Payload.swift */; };
+		C236CBE522E0328C001265DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C236CBE422E0328C001265DA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +28,18 @@
 		C236CBB422DFF590001265DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C236CBB622DFF590001265DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C236CBBB22DFF591001265DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C236CBBE22DFF591001265DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C236CBC022DFF591001265DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C236CBCA22DFF969001265DA /* UIView+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Utilities.swift"; sourceTree = "<group>"; };
 		C236CBCC22DFFD3C001265DA /* NSLayoutConstraint+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Convenience.swift"; sourceTree = "<group>"; };
 		C236CBCF22E00A0A001265DA /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
 		C236CBD122E0151A001265DA /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		C236CBD322E025B4001265DA /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C236CBD522E029F0001265DA /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		C236CBD922E02A39001265DA /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		C236CBDB22E02A8F001265DA /* FirstStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStage.swift; sourceTree = "<group>"; };
+		C236CBDD22E02AA7001265DA /* SecondStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStage.swift; sourceTree = "<group>"; };
+		C236CBDF22E02AC6001265DA /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
+		C236CBE422E0328C001265DA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +72,16 @@
 		C236CBB322DFF590001265DA /* DemoMavFarm */ = {
 			isa = PBXGroup;
 			children = (
-				C236CBC922DFF951001265DA /* Utilities */,
 				C236CBB422DFF590001265DA /* AppDelegate.swift */,
+				C236CBE122E03229001265DA /* Network */,
 				C236CBC822DFF638001265DA /* Model */,
 				C236CBCE22E009AB001265DA /* View */,
 				C236CBC722DFF631001265DA /* View Controllers */,
 				C236CBC622DFF620001265DA /* Coordinators */,
+				C236CBC922DFF951001265DA /* Utilities */,
 				C236CBBB22DFF591001265DA /* Assets.xcassets */,
-				C236CBBD22DFF591001265DA /* LaunchScreen.storyboard */,
 				C236CBC022DFF591001265DA /* Info.plist */,
+				C236CBE422E0328C001265DA /* LaunchScreen.storyboard */,
 			);
 			path = DemoMavFarm;
 			sourceTree = "<group>";
@@ -92,6 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				C236CBD122E0151A001265DA /* Mission.swift */,
+				C236CBD522E029F0001265DA /* Rocket.swift */,
+				C236CBDB22E02A8F001265DA /* FirstStage.swift */,
+				C236CBDD22E02AA7001265DA /* SecondStage.swift */,
+				C236CBDF22E02AC6001265DA /* Payload.swift */,
+				C236CBD922E02A39001265DA /* Core.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +129,14 @@
 				C236CBCF22E00A0A001265DA /* LaunchTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C236CBE122E03229001265DA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C236CBD322E025B4001265DA /* Network.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C236CBBF22DFF591001265DA /* LaunchScreen.storyboard in Resources */,
+				C236CBE522E0328C001265DA /* LaunchScreen.storyboard in Resources */,
 				C236CBBC22DFF591001265DA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,22 +214,17 @@
 				C236CBD022E00A0A001265DA /* LaunchTableViewCell.swift in Sources */,
 				C236CBB522DFF590001265DA /* AppDelegate.swift in Sources */,
 				C236CBCB22DFF96A001265DA /* UIView+Utilities.swift in Sources */,
+				C236CBDC22E02A8F001265DA /* FirstStage.swift in Sources */,
+				C236CBE022E02AC6001265DA /* Payload.swift in Sources */,
+				C236CBD422E025B4001265DA /* Network.swift in Sources */,
 				C236CBCD22DFFD3C001265DA /* NSLayoutConstraint+Convenience.swift in Sources */,
+				C236CBDE22E02AA7001265DA /* SecondStage.swift in Sources */,
+				C236CBDA22E02A39001265DA /* Core.swift in Sources */,
+				C236CBD622E029F0001265DA /* Rocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C236CBBD22DFF591001265DA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C236CBBE22DFF591001265DA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C236CBC122DFF591001265DA /* Debug */ = {

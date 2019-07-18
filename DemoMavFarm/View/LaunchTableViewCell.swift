@@ -12,6 +12,7 @@ class LaunchTableViewCell: UITableViewCell {
     
     struct Constants {
         static let padding: CGFloat = 8
+        static let launchCell = "launchCell"
     }
 
     private lazy var stackView: UIStackView = configureSubview(UIStackView(arrangedSubviews: [missionNameLabel, missionTimeLabel, missionIDLabel, rocketNameLabel, reusePiecesLabel])) {
@@ -23,7 +24,7 @@ class LaunchTableViewCell: UITableViewCell {
     
     lazy var missionNameLabel: UILabel = configureSubview(UILabel()) {
         $0.textColor = .white
-        $0.font = UIFont.boldSystemFont(ofSize: 15)
+        $0.font = UIFont.boldSystemFont(ofSize: 22)
     }
     
     lazy var missionTimeLabel: UILabel = configureSubview(UILabel()) {
@@ -33,7 +34,7 @@ class LaunchTableViewCell: UITableViewCell {
     
     lazy var missionIDLabel: UILabel = configureSubview(UILabel()) {
         $0.textColor = .white
-        $0.font = UIFont.boldSystemFont(ofSize: 15)
+        $0.font = UIFont.systemFont(ofSize: 15)
     }
     
     lazy var rocketNameLabel: UILabel = configureSubview(UILabel()) {
@@ -63,22 +64,13 @@ class LaunchTableViewCell: UITableViewCell {
         stackView.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: Constants.padding).activate()
         stackView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: Constants.padding).activate()
         stackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -Constants.padding).activate()
-        
-//        Name: "CRS-18"
-//        Time: 2019-07-21T23:35:00.000Z
-//        ID: EE86F74
-//        Rocket: Falcon 9
-//        Reused Pieces: Yes
-        
-        missionNameLabel.text = "Name: CRS-18"
-        missionIDLabel.text = "Mission ID: EE86F74"
-        missionTimeLabel.text = "Launch Date: 2019-07-21T23:35:00.000Z"
-        reusePiecesLabel.text = "Reused Pieces: Yes"
-        rocketNameLabel.text = "Rocket: Falcon 9"
-        
     }
     
-    func configure(with: Int) {
-        
+    func configure(with mission: Mission) {
+        missionNameLabel.text = "\(mission.mission_name)"
+        missionIDLabel.text = "Mission ID: \(mission.mission_id.first ?? "N/A")"
+        missionTimeLabel.text = "Launch Date:\(mission.launchDateString)"
+        reusePiecesLabel.text = "Reused Pieces: \(mission.isReusingPieces)"
+        rocketNameLabel.text = "Rocket: \(mission.rocket.rocket_name)"
     }
 }
